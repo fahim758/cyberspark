@@ -8,86 +8,106 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0a0f2c, #1a1f4d);
-  color: white;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px;
+body{
+  font-family:'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0a0f2c, #050816);
+  color:white;
 }
 
-.left {
-  max-width: 50%;
+.container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:80px 8%;
+  min-height:100vh;
 }
 
-.logo {
-  font-weight: 700;
-  font-size: 22px;
-  margin-bottom: 20px;
+.left{
+  max-width:50%;
 }
 
-h1 {
-  font-size: 42px;
-  line-height: 1.3;
+.logo{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:20px;
+  color:#00d4ff;
 }
 
-.highlight-blue {
-  color: #00d4ff;
-  text-shadow: 0 0 10px #00d4ff;
+h1{
+  font-size:48px;
+  line-height:1.3;
+  margin-bottom:15px;
 }
 
-.highlight-gold {
-  background: linear-gradient(90deg, gold, orange);
-  -webkit-background-clip: text;
-  color: transparent;
+.blue{
+  color:#00d4ff;
 }
 
-.sub {
-  margin: 15px 0;
-  color: #ccc;
+.gold{
+  background:linear-gradient(90deg, gold, orange);
+  -webkit-background-clip:text;
+  color:transparent;
 }
 
-.services {
-  margin-top: 20px;
+.sub{
+  color:#aaa;
+  margin-bottom:25px;
 }
 
-.services div {
-  margin: 8px 0;
+.services div{
+  margin:10px 0;
+  font-size:16px;
 }
 
-.cta {
-  margin-top: 30px;
+.cta{
+  margin-top:30px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 12px 22px;
-  margin-right: 10px;
-  border-radius: 25px;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
+.btn{
+  padding:14px 26px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:500;
+  margin-right:10px;
 }
 
-.primary {
-  background: #00d4ff;
-  box-shadow: 0 0 15px #00d4ff;
+.primary{
+  background:#00d4ff;
+  box-shadow:0 0 15px #00d4ff;
+  color:#000;
 }
 
-.secondary {
-  border: 1px solid #888;
+.secondary{
+  border:1px solid #555;
+  color:#fff;
 }
 
-.right img {
-  width: 350px;
-  border-radius: 20px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+.right img{
+  width:400px;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+
+@media(max-width:900px){
+  .container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .left{
+    max-width:100%;
+  }
+
+  .right img{
+    width:280px;
+    margin-top:30px;
+  }
 }
 </style>
 </head>
@@ -101,11 +121,11 @@ h1 {
 
   <h1>
     Grow Your Business with 
-    <span class="highlight-blue">Smart</span> 
-    <span class="highlight-gold">Digital Solutions</span>
+    <span class="blue">Smart</span> 
+    <span class="gold">Digital Solutions</span>
   </h1>
 
-  <div class="sub">Build • Rank • Succeed Online</div>
+  <p class="sub">Build • Rank • Succeed Online</p>
 
   <div class="services">
     <div>✔ Website Development</div>
@@ -121,7 +141,7 @@ h1 {
 </div>
 
 <div class="right">
-  <img src="https://images.unsplash.com/photo-1600880292089-90e0b6b6e3c4" alt="businessman">
+  <img src="https://images.unsplash.com/photo-1556157382-97eda2f9e2bf" alt="businessman">
 </div>
 
 </div>
